@@ -43,10 +43,6 @@ local function is_white (val)
     return false
 end
 
-local function starts_with(str, start)
-   return str:sub(1, #start) == start
-end
-
 function print_table(table) 
     for i, v in ipairs(table) do
 	row = ""
@@ -66,7 +62,6 @@ function print_table(table)
     end	    
 end
 
-local function move_piece()
 
 local game_is_running = true
 local input = ""
